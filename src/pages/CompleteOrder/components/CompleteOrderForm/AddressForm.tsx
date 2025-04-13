@@ -19,7 +19,7 @@ export function AddressForm() {
     <AddressFormContainer>
       <div className="row">
         <Input
-          placeholder="CEP"
+          placeholder="Postal Code"
           type="number"
           className="cep"
           {...register('cep')}
@@ -28,7 +28,7 @@ export function AddressForm() {
       </div>
       <div className="row">
         <Input
-          placeholder="Rua"
+          placeholder="Street Name"
           className="street"
           {...register('street')}
           error={errors.street?.message}
@@ -37,12 +37,12 @@ export function AddressForm() {
       <div className="row">
         <Input
           type="number"
-          placeholder="Número"
+          placeholder="House Number"
           {...register('number')}
           error={errors.number?.message}
         />
         <Input
-          placeholder="Complemento"
+          placeholder="Additional Information"
           className="complement"
           {...register('complement')}
           error={errors.complement?.message}
@@ -51,18 +51,18 @@ export function AddressForm() {
       </div>
       <div className="row">
         <Input
-          placeholder="Bairro"
+          placeholder="District "
           {...register('district')}
           error={errors.district?.message}
         />
         <Input
-          placeholder="Cidade"
+          placeholder="City"
           className="city"
           {...register('city')}
           error={errors.city?.message}
         />
         <Input
-          placeholder="UF"
+          placeholder="State"
           className="uf"
           {...register('uf')}
           error={errors.uf?.message}
