@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const OurCoffeesContainer = styled.section`
   width: 100%;
   margin-top: 2rem;
+  background-color: black;
+  color: white;
 
   @media (max-width: 700px) {
     margin-top: 23rem;
@@ -16,6 +18,8 @@ export const CoffeeList = styled.div`
   column-gap: 2rem;
   row-gap: 3.5rem;
   margin-top: 3.5rem;
+  background-color: black;
+  color: white;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(3, 1fr);

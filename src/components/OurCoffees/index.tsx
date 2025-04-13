@@ -7,8 +7,8 @@ import { coffees } from '../../mock/coffee'
 export function OurCoffees() {
   return (
     <OurCoffeesContainer className="container">
-      <TitleText size="l" color="subtitle">
-        Nossos cafés
+      <TitleText size="l" style={{ color: '#FFFFFF' }}>
+        Discover Our Coffees
       </TitleText>
 
       <CoffeeList>

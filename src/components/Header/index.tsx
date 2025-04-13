@@ -2,7 +2,7 @@ import { HeaderButton, HeaderButtonsContainer, HeaderContainer } from './styles'
 
 import { MapPin, ShoppingCart } from 'phosphor-react'
 
-import coffeLogoImage from '../../assets/coffe-delivery-logo.svg'
+import coffeLogoImage from '../../assets/Daily-Dose.jpg'
 import { NavLink } from 'react-router-dom'
 import { useCart } from '../../hooks/useCart'
 
@@ -13,7 +13,11 @@ export function Header() {
     <HeaderContainer>
       <div className="container">
         <NavLink to="/">
-          <img src={coffeLogoImage} alt="" />
+          <img
+            src={coffeLogoImage}
+            alt=""
+            style={{ width: 'auto', height: '100px' }}
+          />
         </NavLink>
 
         <HeaderButtonsContainer>
