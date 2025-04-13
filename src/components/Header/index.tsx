@@ -21,6 +21,7 @@ export function Header() {
             <MapPin size={20} weight="fill" className="pr-1" />
             Colombo, Sri Lanka
           </HeaderButton>
+
           <NavLink to="/completeOrder">
             <HeaderButton variant="yellow">
               {cartQuantity >= 1 && <span>{cartQuantity}</span>}
