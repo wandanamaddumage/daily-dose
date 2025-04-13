@@ -17,13 +17,13 @@ export const DetailsContainer = styled(SectionBaseStyle)`
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background: ${({ theme }) => theme.colors['base-card-dark'] || '#393E46'};
+  background: ${({ theme }) => '#393E46'};
 `
 
 export const ConfirmationSectionContainer = styled.section`
   display: flex;
   flex-direction: column;
-  background: ${({ theme }) => theme.colors['base-card-dark'] || '#393E46'};
+  background: ${({ theme }) => '#393E46'};
   gap: 0.8rem;
 
   > div {

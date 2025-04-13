@@ -3,7 +3,7 @@ import { TitleText, RegularText } from '../Typography'
 
 export const CoffeeCardContainer = styled.div`
   width: 100%;
-  background: ${({ theme }) => theme.colors['base-card-dark'] || '#393E46'};
+  background: ${({ theme }) => '#393E46'};
   border-radius: 6px 36px 6px 36px;
   padding: 1.25rem;
   display: flex;

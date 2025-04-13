@@ -12,8 +12,8 @@ export const FormSectionContainer = styled(SectionBaseStyle)`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background: ${({ theme }) => theme.colors['base-card-dark'] || '#393E46'};
-  color: ${({ theme }) => theme.colors['base-card-dark'] || '#FFFFFF'};
+  background: ${({ theme }) => '#393E46'};
+  color: ${({ theme }) => '#FFFFFF'};
 `
 
 export const AddressFormContainer = styled.div`
