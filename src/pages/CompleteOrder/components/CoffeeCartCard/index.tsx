@@ -48,7 +48,7 @@ export function CoffeeCartCard({ coffee }: CoffeeCardCardProps) {
             />
             <RemoveButton onClick={handleRemove}>
               <Trash size={16} />
-              REMOVER
+              REMOVE
             </RemoveButton>
           </ActionsContainer>
         </div>
