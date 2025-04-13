@@ -12,12 +12,26 @@ export function Header() {
   return (
     <HeaderContainer>
       <div className="container">
-        <NavLink to="/">
+        <NavLink
+          to="/"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1rem',
+            textDecoration: 'none',
+            color: 'inherit',
+          }}
+        >
           <img
             src={coffeLogoImage}
-            alt=""
-            style={{ width: 'auto', height: '100px' }}
+            alt="Daily Dose Logo"
+            style={{ width: 'auto', height: '60px' }}
           />
+          <span
+            style={{ fontSize: '1.5rem', fontWeight: 700, color: 'orange' }}
+          >
+            Daily Dose
+          </span>
         </NavLink>
 
         <HeaderButtonsContainer>
