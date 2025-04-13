@@ -13,8 +13,10 @@ export function SectionTitle({ title, subtitle, icon }: SectionTitleProps) {
     <SectionTitleContainer>
       {icon}
       <div>
-        <RegularText color="subtitle">{title}</RegularText>
-        <RegularText size="s">{title}</RegularText>
+        <RegularText style={{ color: '#FFFFFF' }}>{title}</RegularText>
+        <RegularText size="s" style={{ color: '#FFFFFF' }}>
+          {subtitle}
+        </RegularText>
       </div>
     </SectionTitleContainer>
   )

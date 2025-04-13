@@ -9,8 +9,8 @@ export function SelectedCoffees() {
 
   return (
     <SelectedCoffeesContainer>
-      <TitleText size="xs" color="subtitle">
-        Cafés selecionados
+      <TitleText size="xs" style={{ color: '#FFFFFF' }}>
+        Selected Coffees
       </TitleText>
 
       <DetailsContainer>

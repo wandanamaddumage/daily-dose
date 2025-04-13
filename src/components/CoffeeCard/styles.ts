@@ -3,7 +3,7 @@ import { TitleText, RegularText } from '../Typography'
 
 export const CoffeeCardContainer = styled.div`
   width: 100%;
-  background: ${({ theme }) => theme.colors['base-card']};
+  background: ${({ theme }) => theme.colors['base-card-dark'] || '#393E46'};
   border-radius: 6px 36px 6px 36px;
   padding: 1.25rem;
   display: flex;
@@ -43,10 +43,10 @@ export const Tags = styled.div`
 
 export const Name = styled(TitleText).attrs({
   size: 's',
-  color: 'subtitle',
   weight: '700',
 })`
   margin-bottom: 0.5rem;
+  color: ${({ theme }) => theme.colors['brand-yellow-dark']};
 `
 
 export const Description = styled(RegularText).attrs({
@@ -54,6 +54,7 @@ export const Description = styled(RegularText).attrs({
   color: 'label',
 })`
   margin-bottom: 2rem;
+  color: ${({ theme }) => '#FFFFFF'};
 `
 
 export const CardFooter = styled.div`
@@ -61,6 +62,7 @@ export const CardFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: ${({ theme }) => '#FFFFFF'};
 
   > div {
     display: flex;
