@@ -19,12 +19,9 @@ export function Hero() {
       <HeroContent className="container">
         <div>
           <section>
-            <HeroTitle size="xl">
-              Encontre o café perfeito para qualquer hora do dia
-            </HeroTitle>
-            <RegularText size="l" color="subtitle" as="h3">
-              Com o Coffe Delivery você recebe seu café onde estiver, a qualquer
-              hora
+            <HeroTitle size="xl">The right coffee for every hour</HeroTitle>
+            <RegularText size="l" as="h3" style={{ color: '#FFFFFF' }}>
+              With Daily Dose, receive your coffee anytime, anywhere.
             </RegularText>
           </section>
 
@@ -32,22 +29,22 @@ export function Hero() {
             <InfoWithIcon
               iconColor={colors['brand-yellow-dark']}
               icon={<ShoppingCart weight="fill" />}
-              text="Compra simples e segura"
+              text="A safe and easy way to shop"
             />
             <InfoWithIcon
               iconColor={colors['base-text']}
               icon={<Package weight="fill" />}
-              text="Embalagem mantém o café intacto"
+              text="Sealed to keep your coffee fresh and safe"
             />
             <InfoWithIcon
               iconColor={colors['brand-yellow']}
               icon={<Timer weight="fill" />}
-              text="Entrega rápida e rastreada"
+              text="Quick and trackable delivery"
             />
             <InfoWithIcon
               iconColor={colors['brand-purple']}
               icon={<Coffee weight="fill" />}
-              text="O café chega fresquinho até você"
+              text="We bring fresh coffee right to you"
             />
           </BenefitsContainer>
         </div>
