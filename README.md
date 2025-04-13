@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img alt="Daily Dose" src="https://user-images.githubusercontent.com/56506919/219960287-d0612632-6063-4624-8592-6c79acfa1701.png">
+  <img alt="Daily Dose" src="https://github.com/wandanamaddumage/daily-dose/blob/dev/public/readme.jpg">
 </p>
 
 <br/>
