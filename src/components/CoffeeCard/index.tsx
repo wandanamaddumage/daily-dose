@@ -68,10 +68,15 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
 
       <CardFooter>
         <div>
-          <RegularText size="s">R$</RegularText>
-          <TitleText size="m" as="strong" style={{ color: '#FFFFFF' }}>
+          <RegularText size="m" as="strong" style={{ color: '#FFFFFF' }}>
+            R$
+          </RegularText>
+          <RegularText size="m" as="strong" style={{ color: '#FFFFFF' }}>
             {formattedPrice}
-          </TitleText>
+          </RegularText>
+          {/* <TitleText size="m" as="strong" style={{ color: '#FFFFFF' }}>
+            {formattedPrice}
+          </TitleText> */}
         </div>
 
         <AddCartWrapper>
