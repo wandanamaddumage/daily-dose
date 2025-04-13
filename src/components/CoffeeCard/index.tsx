@@ -1,5 +1,5 @@
-import { QuantityInput } from '../QuantityInput'
-import { RegularText, TitleText } from '../Typography'
+import { QuantityInput } from '../QuantityInput';
+import { RegularText, TitleText } from '../Typography';
 import {
   CoffeeCardContainer,
   Tags,
@@ -7,51 +7,51 @@ import {
   Description,
   CardFooter,
   AddCartWrapper,
-} from './styles'
-import { ShoppingCart } from 'phosphor-react'
-import { useCart } from '../../hooks/useCart'
-import { useState } from 'react'
+} from './styles';
+import { ShoppingCart } from 'phosphor-react';
+import { useCart } from '../../hooks/useCart';
+import { useState } from 'react';
 
 export interface Coffee {
-  id: number
-  tags: string[]
-  name: string
-  description: string
-  photo: string
-  price: number
+  id: number;
+  tags: string[];
+  name: string;
+  description: string;
+  photo: string;
+  price: number;
 }
 
 interface CoffeeProps {
-  coffee: Coffee
+  coffee: Coffee;
 }
 
 export function CoffeeCard({ coffee }: CoffeeProps) {
-  const { addCoffeeToCart } = useCart()
+  const { addCoffeeToCart } = useCart();
 
-  const [quantity, setQuantity] = useState(1)
+  const [quantity, setQuantity] = useState(1);
 
   function handleIncrease() {
-    setQuantity((state) => state + 1)
+    setQuantity((state) => state + 1);
   }
 
   function handleDecrease() {
-    setQuantity((state) => state - 1)
+    setQuantity((state) => state - 1);
   }
 
   function handleAddToCart() {
     const coffeeToAdd = {
       ...coffee,
       quantity,
-    }
+    };
 
-    addCoffeeToCart(coffeeToAdd)
+    addCoffeeToCart(coffeeToAdd);
 
-    setQuantity(1)
+    setQuantity(1);
   }
 
   const formattedPrice = coffee.price.toLocaleString('pt-BR', {
     minimumFractionDigits: 2,
-  })
+  });
 
   return (
     <CoffeeCardContainer>
@@ -86,5 +86,5 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
         </AddCartWrapper>
       </CardFooter>
     </CoffeeCardContainer>
-  )
+  );
 }

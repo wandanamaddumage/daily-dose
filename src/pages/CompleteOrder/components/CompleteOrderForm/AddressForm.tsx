@@ -1,19 +1,19 @@
-import { AddressFormContainer } from './styles'
-import { useFormContext } from 'react-hook-form'
-import { Input } from '../../../../components/Input'
+import { AddressFormContainer } from './styles';
+import { useFormContext } from 'react-hook-form';
+import { Input } from '../../../../components/Input';
 
 interface ErrorsType {
   errors: {
     [key: string]: {
-      message: string
-    }
-  }
+      message: string;
+    };
+  };
 }
 
 export function AddressForm() {
-  const { register, formState } = useFormContext()
+  const { register, formState } = useFormContext();
 
-  const { errors } = formState as unknown as ErrorsType
+  const { errors } = formState as unknown as ErrorsType;
 
   return (
     <AddressFormContainer>
@@ -69,5 +69,5 @@ export function AddressForm() {
         />
       </div>
     </AddressFormContainer>
-  )
+  );
 }

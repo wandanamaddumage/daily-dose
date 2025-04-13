@@ -1,8 +1,8 @@
-import { CoffeeCard } from '../CoffeeCard'
-import { TitleText } from '../Typography'
-import { CoffeeList, OurCoffeesContainer } from './styles'
+import { CoffeeCard } from '../CoffeeCard';
+import { TitleText } from '../Typography';
+import { CoffeeList, OurCoffeesContainer } from './styles';
 
-import { coffees } from '../../mock/coffee'
+import { coffees } from '../../mock/coffee';
 
 export function OurCoffees() {
   return (
@@ -17,5 +17,5 @@ export function OurCoffees() {
         ))}
       </CoffeeList>
     </OurCoffeesContainer>
-  )
+  );
 }
