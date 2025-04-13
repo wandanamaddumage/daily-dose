@@ -33,9 +33,9 @@ export function OrderConfirmedPage() {
   return (
     <OrderConfirmedContainer className="container">
       <div>
-        <TitleText size="l">Uhu! Pedido confirmado</TitleText>
-        <RegularText size="l" color="subtitle">
-          Agora é só aguardar que logo o café chegará até você
+        <TitleText size="l">Cheers! We’ve received your order ☕️</TitleText>
+        <RegularText size="l" style={{ color: '#FFFFFF' }}>
+          Just a little patience... your coffee is almost there!
         </RegularText>
       </div>
 
@@ -45,8 +45,9 @@ export function OrderConfirmedPage() {
             icon={<MapPin weight="fill" />}
             iconColor={colors['brand-purple']}
             text={
-              <RegularText>
-                Entrega em
+              <RegularText style={{ color: '#FFFFFF' }}>
+                Your order will be delivered to:
+                <br />
                 <strong>
                   {state.street}, {state.number}
                 </strong>
@@ -60,8 +61,8 @@ export function OrderConfirmedPage() {
             icon={<Clock weight="fill" />}
             iconColor={colors['brand-yellow']}
             text={
-              <RegularText>
-                Previsão de entrega
+              <RegularText style={{ color: '#FFFFFF' }}>
+                Estimated Delivery
                 <br />
                 <strong>20 min - 30 min</strong>
               </RegularText>
@@ -72,8 +73,8 @@ export function OrderConfirmedPage() {
             icon={<CurrencyDollar weight="fill" />}
             iconColor={colors['brand-yellow-dark']}
             text={
-              <RegularText>
-                Pagamento na entrega
+              <RegularText style={{ color: '#FFFFFF' }}>
+                Payment on delivery
                 <br />
                 <strong>{paymentMethods[state.paymentMethod].label}</strong>
               </RegularText>
