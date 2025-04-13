@@ -5,7 +5,7 @@ import {
   BenefitsContainer,
 } from './styles'
 
-import heroImage from '../../../../assets/hero-image.png'
+import heroImage from '../../../../assets/HeroImage.png'
 import { RegularText } from '../../../../components/Typography'
 import { InfoWithIcon } from '../../../../components/InfoWithIcon'
 import { ShoppingCart, Package, Timer, Coffee } from 'phosphor-react'
