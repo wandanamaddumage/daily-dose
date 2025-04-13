@@ -69,7 +69,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
       <CardFooter>
         <div>
           <RegularText size="s">R$</RegularText>
-          <TitleText size="m" color="text" as="strong">
+          <TitleText size="m" as="strong" style={{ color: '#FFFFFF' }}>
             {formattedPrice}
           </TitleText>
         </div>

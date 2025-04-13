@@ -45,10 +45,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [Y
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/kaikySantos/coffe-delivery.git
+$ git clone https://github.com/wandanamaddumage/coffee-delivery.git
 
 # Go into the directory
-$ cd coffe-delivery
+$ cd daily-dose
 
 # Install dependencies
 $ yarn

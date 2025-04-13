@@ -12,6 +12,8 @@ export const FormSectionContainer = styled(SectionBaseStyle)`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background: ${({ theme }) => '#393E46'};
+  color: ${({ theme }) => '#FFFFFF'};
 `
 
 export const AddressFormContainer = styled.div`

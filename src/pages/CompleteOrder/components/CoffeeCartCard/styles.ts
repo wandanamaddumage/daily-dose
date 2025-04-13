@@ -5,6 +5,7 @@ export const CoffeeCartCardContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: ${({ theme }) => '#393E46'};
 
   border-bottom: 1px solid ${({ theme }) => theme.colors['base-button']};
   padding-bottom: 1.5rem;
@@ -60,6 +61,7 @@ export const RemoveButton = styled.button`
   display: flex;
   align-items: center;
   gap: 0.25rem;
+
   color: ${({ theme }) => theme.colors['base-text']};
   font-size: 0.75rem;
   height: 100%;

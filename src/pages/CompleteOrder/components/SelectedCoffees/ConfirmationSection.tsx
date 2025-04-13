@@ -17,27 +17,31 @@ export function ConfirmationSection() {
   return (
     <ConfirmationSectionContainer>
       <div>
-        <RegularText size="s">Total de itens</RegularText>
-        <RegularText size="s">R$ {formattedItemsTotal}</RegularText>
+        <RegularText size="s" style={{ color: '#FFFFFF' }}>
+          Total items
+        </RegularText>
+        <RegularText size="s" style={{ color: '#FFFFFF' }}>
+          R$ {formattedItemsTotal}
+        </RegularText>
       </div>
       <div>
-        <RegularText size="s">Entrega</RegularText>
-        <RegularText size="s">R$ {formattedDeliveryPrice}</RegularText>
+        <RegularText size="s" style={{ color: '#FFFFFF' }}>
+          Delivery Fee
+        </RegularText>
+        <RegularText size="s" style={{ color: '#FFFFFF' }}>
+          R$ {formattedDeliveryPrice}
+        </RegularText>
       </div>
       <div>
-        <RegularText weight="700" color="subtitle" size="l">
+        <RegularText weight="700" size="l" style={{ color: '#FFFFFF' }}>
           Total
         </RegularText>
-        <RegularText weight="700" color="subtitle" size="l">
+        <RegularText weight="700" size="l" style={{ color: '#FFFFFF' }}>
           R$ {formattedCartTotal}
         </RegularText>
       </div>
 
-      <Button
-        text="Confirmar pedido"
-        disabled={cartQuantity <= 0}
-        type="submit"
-      />
+      <Button text="Confirm Order" disabled={cartQuantity <= 0} type="submit" />
     </ConfirmationSectionContainer>
   )
 }
