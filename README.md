@@ -50,6 +50,4 @@ $ yarn dev
 # The app will automatically reload if you change any of the source files.
 ```
 
----
-
-Made with ♥ by Kaiky 👋🏻
+<!-- Made with ♥ by Wandana 👋🏻 -->
